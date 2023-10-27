@@ -2,7 +2,7 @@
 mkdir /root/9Hits/
 cd /root/9Hits/
 a=$((1 + RANDOM % 28))
-URL="https://ghproxy.com/https://github.com/xds2s/share/releases/download/1/9hits-linux-x64-2.5.2.tar.bz2"
+URL="http://dl.9hits.com/9hits-linux-x64.tar.bz2"
 if [[ $EUID -ne 0 ]]; then
     whiptail --title "ERROR" --msgbox "This script must be run as root" 8 78
     exit
@@ -414,7 +414,7 @@ else
                 exProxyServer=$8
                 if [ -z "$9" ]
                 then
-                    URL="https://ghproxy.com/https://github.com/xds2s/share/releases/download/1/9hits-linux-x64-2.5.2.tar.bz2"
+                    URL="http://dl.9hits.com/9hits-linux-x64.tar.bz2"
                 else
                     URL=$9
                 fi
