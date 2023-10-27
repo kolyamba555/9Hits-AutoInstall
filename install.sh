@@ -2,7 +2,7 @@
 mkdir /root/9Hits/
 cd /root/9Hits/
 a=$((1 + RANDOM % 28))
-URL="http://dl.9hits.com/3.0.4/9hitsv3-linux64.tar.bz2"
+URL="http://dl.9hits.com/3.0.3/9hitsv3-win64.zip"
 if [[ $EUID -ne 0 ]]; then
     whiptail --title "ERROR" --msgbox "This script must be run as root" 8 78
     exit
@@ -414,7 +414,7 @@ else
                 exProxyServer=$8
                 if [ -z "$9" ]
                 then
-                    URL="http://dl.9hits.com/3.0.4/9hitsv3-linux64.tar.bz2"
+                    URL="http://dl.9hits.com/3.0.3/9hitsv3-win64.zip"
                 else
                     URL=$9
                 fi
